@@ -1,8 +1,15 @@
 const list = document.querySelector("#list");
 const button=document.querySelector("button")
+const video=document.getElementById("owo");
 
 function onClick() {
     list.innerHTML=" "
+    video.style.display="block"
+    video.play()
+}
+
+function show(){
+    video.style.display="none"
     const genius=document.createElement("h3");
     let member=Math.floor(Math.random() * 5) +1
     if (member==1){
@@ -22,4 +29,6 @@ function onClick() {
     }
     list.appendChild(genius);
 }
+
 button.addEventListener("click",onClick);
+video.addEventListener("ended",show)
