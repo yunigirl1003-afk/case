@@ -19,7 +19,7 @@ function show(){
         genius.textContent="Dong"
     }
     else if (member==3){
-        genius.textContent="Chou"
+        genius.textContent="Lucas"
     }
     else if (member==4){
         genius.textContent="趙雲"
