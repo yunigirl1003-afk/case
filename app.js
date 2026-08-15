@@ -1,25 +1,45 @@
-const list = document.querySelector("#list");
-const button=document.querySelector("button")
-const video=document.getElementById("owo");
+const name= document.querySelector("#name");
+const first=document.querySelector("#first")
+const video=document.querySelector("#owo");
+const picture=document.querySelector("#picture")
+const intro=document.querySelector("#intro")
+const second=document.querySelector("#second")
+
+function skip(){
+    video.currentTime=7
+}
 
 function onClick() {
-    list.innerHTML=" "
+    name.innerHTML=" "
+    intro.innerHTML=""
+    picture.innerHTML=""
     video.style.display="block"
+    second.style.display="block"
     video.play()
 }
 
 function show(){
     video.style.display="none"
+    second.style.display="none"
     const genius=document.createElement("h3");
-    let member=Math.floor(Math.random() * 5) +1
+    const pic=document.createElement("img");
+    const itr=document.createElement("p");
+    // let member=Math.floor(Math.random() * 5) +1
+    let member=Math.floor(Math.random() * 3) +1
     if (member==1){
         genius.textContent="海獅";
+        pic.src="1000044821.png"
+        itr.innerHTML="本名：邱楷詩<br>暱稱：海獅<br>生理性別：女<br>心理性別：義大利麵拌42號混凝土<br>生日：99/6/14(小了玉米整整一年)<br>喜歡：建北電資、看動漫、辦活動<br>討厭：詞窮、拖延、吵架<br>我的三個關鍵字：外向、活網、爆肝<br>唉居：fgisc40_sealion但等於沒加，我跟本不會打開建議你加我discord<br>備註： https://sealion.page/ (最喜歡到哪都宣傳一下個網了 謝謝dong幫我弄的網域"
     }
     else if (member==2){
         genius.textContent="Dong"
+        pic.src="1000044819.png"
+        itr.innerHTML="本名：陳柏東<br>暱稱：Dong<br>性別：男<br>生日：2009/10/31<br>喜歡：建北電資、寫程式<br>討厭：討厭、討厭討厭討厭、討厭討厭討厭討厭討厭<br>我的三個關鍵字：東、Dong、！<br>唉居：ckeisc46_dong<br>網站：https://doong.me/<br>備註：我其實不太常用 IG，如有聯絡需求推薦使用 Discord 或是 Telegram！"
     }
     else if (member==3){
         genius.textContent="Lucas"
+        pic.src="1000044818.png"
+        itr.innerHTML="本名：林律衡<br>暱稱：Lucas<br>性別：男<br>生日：2010/2/11<br>喜歡：我喜歡的東西<br>討厭：我討厭的東西<br>我的三個關鍵字：弱、小丑、不會鋼琴<br>唉居：ckeisc31_ckimc26_lucas<br>備註：希望你們能抽到我的新大富翁卡<br>備備註：ㄟ你們是不是不知道那是什麼<br>備備備註：沒關係到時候就知道了<br>(我們已經體會到了)"
     }
     else if (member==4){
         genius.textContent="趙雲"
@@ -27,8 +47,12 @@ function show(){
     else if (member==5){
         genius.textContent="燒雞"
     }
-    list.appendChild(genius);
+    name.appendChild(genius);
+    picture.appendChild(pic);
+    intro.appendChild(itr);
 }
 
-button.addEventListener("click",onClick);
-video.addEventListener("ended",show)
+first.addEventListener("click",onClick);
+video.addEventListener("ended",show);
+second.addEventListener("click",skip)
+

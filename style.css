@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+button {
+    font-size: 32px;
+}
+#name{
+    font-size: 25px;
+}
+video{
+    width:600px
+}
+img{
+    width:500px
+}
+#intro{
+    font-size:16px;
+}
+#videoctrl{
+    position:relative;
+}
+#second {
+    position:absolute;
+    top:0px;
+    right:0px;
+    font-size:12px;
+    padding:5px;
+}

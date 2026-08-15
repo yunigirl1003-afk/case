@@ -8,9 +8,20 @@
 </head>
 <body>
     <h1>請抽取你的護法(電神學長姐)</h1>
-    <button>抽取</button>
-    <video id="owo" src="Screen_Recording_20260812_114513_Genshin Impact~5.mp4" alt="抽卡動畫 但它掛了" style="display: none;"> </video>
-    <div id="list"></div>
+    <button id="first">抽取</button>
+    <br>
+    <br>
+    <div id="videoctrl">
+        <video id="owo" src="Screen_Recording_20260812_114513_Genshin Impact~5.mp4" alt="抽卡動畫 但它掛了" style="display: none;"> </video>
+        <button id="second" style="display: none;">跳過動畫</button>
+    </div>
+    <div style="display: flex;gap:20px"> 
+        <div id="person">
+            <div id="name"></div>
+            <div id="intro"></div>
+        </div>
+        <div id="picture"></div>
+    </div>
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
