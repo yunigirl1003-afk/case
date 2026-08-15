@@ -24,8 +24,7 @@ function show(){
     const genius=document.createElement("h3");
     const pic=document.createElement("img");
     const itr=document.createElement("p");
-    // let member=Math.floor(Math.random() * 5) +1
-    let member=Math.floor(Math.random() * 3) +1
+    let member=Math.floor(Math.random() * 5) +1
     if (member==1){
         genius.textContent="海獅";
         pic.src="1000044821.png"
@@ -43,9 +42,13 @@ function show(){
     }
     else if (member==4){
         genius.textContent="趙雲"
+        pic.src="1000044837.png"
+        itr.innerHTML="本名：趙宸妘<br>暱稱：趙雲<br>生理性別：女<br>心理性別：無<br>生日：2010.2.2<br>喜歡：畫圖、寫文、搞oc、貓、動漫、小說<br>討厭：讀書、被罵<br>我的三個關鍵字：破畫畫的、宅宅、oc媽<br>唉居：<br>常駐 chao_yun22<br>本帳 cherrychao22<br>備註：有個人經營企劃然後文本寫不完了"
     }
     else if (member==5){
         genius.textContent="燒雞"
+        pic.src="1000044838.png"
+        itr.innerHTML="本名：唐博威<br>暱稱：燒雞<br>生理＆心理性別：<br>生日：2010/06/11<br>超級喜歡：出去玩<br>討厭：工作<br>我的三個關鍵字：我不會打競程、我不會彈吉他、我不會社交<br>唉居：bowei.611<br>備註：備註"
     }
     name.appendChild(genius);
     picture.appendChild(pic);
